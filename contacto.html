@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITB - Contacto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">ITB</a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="resenas.html">Reseñas</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion">
+      <div class="seccion-titulo">
+        <h2>Contactanos</h2>
+        <p>Estamos en Berisso, Buenos Aires. Escribinos por lo que necesites</p>
+      </div>
+
+      <div class="contacto-grid">
+
+        <!-- MAPA (multimedia: iframe) -->
+        <div class="contacto-mapa">
+          <iframe
+            src="https://maps.google.com/maps?q=Berisso,Buenos%20Aires,Argentina&z=13&output=embed"
+            title="Ubicación de la librería Segunda Edición en Berisso"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- FORMULARIO -->
+        <form
+          action="https://formspree.io/f/TU_ID_DE_FORMSPREE"
+          method="POST"
+          class="form-contacto"
+        >
+          <fieldset>
+            <legend>Tus datos</legend>
+
+            <label for="nombre">Nombre:</label>
+            <input
+              id="nombre"
+              name="nombre"
+              type="text"
+              placeholder="Ingresá tu nombre..."
+              required
+            >
+
+            <label for="correo">Correo electrónico:</label>
+            <input
+              id="correo"
+              name="email"
+              type="email"
+              placeholder="Ingresá tu correo..."
+              required
+            >
+          </fieldset>
+
+          <fieldset>
+            <legend>Tu mensaje</legend>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea
+              id="mensaje"
+              name="message"
+              placeholder="¿En qué te podemos ayudar?"
+              rows="5"
+              required
+            ></textarea>
+          </fieldset>
+
+          <button type="submit" class="btn-enviar">Enviar mensaje</button>
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 ITB - Libros Usados</p>
+
+      <ul class="footer-nav">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="resenas.html">Reseñas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="footer-redes">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
