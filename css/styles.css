@@ -1,20 +1,6 @@
 /* ===== GOOGLE FONTS ===== */
-/* Implementado con <link> en el <head> de cada página (ver HTML) */
-
-/* ===== TOKENS ===== */
-:root {
-  --bg: #f5f0e6;
-  --surface: #fffdf8;
-  --surface-alt: #ece4d3;
-  --line: #ddd3c0;
-  --accent: #8c2f39;
-  --accent-soft: #c96b6f;
-  --text: #2e2620;
-  --text-muted: #6b5d4f;
-
-  --font-display: 'Playfair Display', serif;
-  --font-body: 'Source Sans 3', sans-serif;
-}
+/* Implementado con <link> en el <head> de cada página (ver HTML),
+   no con @import, para que el navegador pueda descargarlas en paralelo. */
 
 /* ===== RESET BASICO ===== */
 * {
@@ -24,22 +10,22 @@
 }
 
 body {
-  font-family: var(--font-body);
-  background-color: var(--bg);
-  color: var(--text);
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: #f5f0e6;
+  color: #2e2620;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 h1, h2, h3, .logo {
-  font-family: var(--font-display);
+  font-family: 'Playfair Display', serif;
 }
 
 /* ===== HEADER / NAVBAR ===== */
 header.site-header {
-  background-color: var(--surface);
-  border-bottom: 2px solid var(--accent);
+  background-color: #fffdf8;
+  border-bottom: 2px solid #8c2f39;
   padding: 1rem 2rem;
 }
 
@@ -54,7 +40,7 @@ header.site-header {
 }
 
 .logo {
-  color: var(--accent);
+  color: #8c2f39;
   font-size: 1.6rem;
   font-weight: 700;
   text-decoration: none;
@@ -67,7 +53,7 @@ header.site-header {
 }
 
 .nav-links a {
-  color: var(--text);
+  color: #2e2620;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -78,14 +64,14 @@ header.site-header {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: #8c2f39;
+  border-bottom-color: #8c2f39;
 }
 
 /* ===== HERO (Inicio) ===== */
 .hero {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, var(--surface-alt), var(--bg));
+  background: linear-gradient(135deg, #ece4d3, #f5f0e6);
 }
 
 .hero-container {
@@ -108,11 +94,11 @@ header.site-header {
 }
 
 .hero-texto h1 span {
-  color: var(--accent);
+  color: #8c2f39;
 }
 
 .hero-texto p {
-  color: var(--text-muted);
+  color: #6b5d4f;
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
@@ -131,7 +117,7 @@ header.site-header {
 
 .btn-principal {
   display: inline-block;
-  background-color: var(--accent);
+  background-color: #8c2f39;
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1.6rem;
@@ -166,13 +152,13 @@ main {
 }
 
 .seccion-titulo p {
-  color: var(--text-muted);
+  color: #6b5d4f;
 }
 
 /* ===== FOOTER ===== */
 footer.site-footer {
-  background-color: var(--surface-alt);
-  border-top: 2px solid var(--accent);
+  background-color: #ece4d3;
+  border-top: 2px solid #8c2f39;
   padding: 1.5rem 2rem;
   margin-top: auto;
 }
@@ -188,7 +174,7 @@ footer.site-footer {
 }
 
 .footer-inner p {
-  color: var(--text-muted);
+  color: #6b5d4f;
   font-size: 0.9rem;
 }
 
@@ -199,14 +185,14 @@ footer.site-footer {
 }
 
 .footer-nav a {
-  color: var(--text-muted);
+  color: #6b5d4f;
   text-decoration: none;
   font-size: 0.9rem;
   transition: color 0.2s;
 }
 
 .footer-nav a:hover {
-  color: var(--accent);
+  color: #8c2f39;
 }
 
 .footer-redes {
@@ -215,13 +201,13 @@ footer.site-footer {
 }
 
 .footer-redes a {
-  color: var(--text-muted);
+  color: #6b5d4f;
   display: flex;
   transition: color 0.2s;
 }
 
 .footer-redes a:hover {
-  color: var(--accent);
+  color: #8c2f39;
 }
 
 .footer-redes svg {
@@ -238,8 +224,8 @@ footer.site-footer {
 }
 
 .libro-card {
-  background-color: var(--surface);
-  border: 1px solid var(--line);
+  background-color: #fffdf8;
+  border: 1px solid #ddd3c0;
   border-radius: 10px;
   overflow: hidden;
   flex: 1 1 240px;
@@ -253,7 +239,7 @@ footer.site-footer {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid #ddd3c0;
 }
 
 .libro-card-body {
@@ -269,14 +255,14 @@ footer.site-footer {
 }
 
 .libro-card .autor {
-  color: var(--text-muted);
+  color: #6b5d4f;
   font-size: 0.9rem;
   font-style: italic;
 }
 
 .libro-estado {
   align-self: flex-start;
-  background-color: var(--accent-soft);
+  background-color: #c96b6f;
   color: #3a0f13;
   font-size: 0.75rem;
   font-weight: 600;
@@ -287,7 +273,7 @@ footer.site-footer {
 
 .libro-card .precio {
   font-weight: 700;
-  color: var(--accent);
+  color: #8c2f39;
   font-size: 1.15rem;
   margin-top: auto;
 }
@@ -300,9 +286,9 @@ footer.site-footer {
 }
 
 .resena-card {
-  background-color: var(--surface);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--accent);
+  background-color: #fffdf8;
+  border: 1px solid #ddd3c0;
+  border-left: 4px solid #8c2f39;
   border-radius: 8px;
   padding: 1.5rem;
   display: flex;
@@ -311,13 +297,13 @@ footer.site-footer {
 }
 
 .resena-estrellas {
-  color: var(--accent);
+  color: #8c2f39;
   font-size: 1.1rem;
   letter-spacing: 0.1em;
 }
 
 .resena-texto {
-  color: var(--text-muted);
+  color: #6b5d4f;
   font-style: italic;
   line-height: 1.6;
   flex: 1;
@@ -339,13 +325,13 @@ footer.site-footer {
   width: 100%;
   height: 100%;
   min-height: 320px;
-  border: 1px solid var(--line);
+  border: 1px solid #ddd3c0;
   border-radius: 10px;
 }
 
 .form-contacto {
-  background-color: var(--surface);
-  border: 1px solid var(--line);
+  background-color: #fffdf8;
+  border: 1px solid #ddd3c0;
   padding: 1.8rem;
   border-radius: 10px;
   display: flex;
@@ -354,7 +340,7 @@ footer.site-footer {
 }
 
 .form-contacto fieldset {
-  border: 1px solid var(--line);
+  border: 1px solid #ddd3c0;
   border-radius: 8px;
   padding: 1.1rem;
   margin-bottom: 0.8rem;
@@ -365,24 +351,24 @@ footer.site-footer {
 
 .form-contacto legend {
   padding: 0 0.4rem;
-  font-family: var(--font-display);
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
-  color: var(--accent);
+  color: #8c2f39;
 }
 
 .form-contacto label {
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: #6b5d4f;
 }
 
 .form-contacto input,
 .form-contacto textarea {
   padding: 0.65rem;
-  background-color: var(--bg);
-  border: 1px solid var(--line);
+  background-color: #f5f0e6;
+  border: 1px solid #ddd3c0;
   border-radius: 4px;
-  color: var(--text);
+  color: #2e2620;
   font-family: inherit;
   font-size: 1rem;
   resize: vertical;
@@ -391,12 +377,12 @@ footer.site-footer {
 .form-contacto input:focus,
 .form-contacto textarea:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: #8c2f39;
 }
 
 .btn-enviar {
   margin-top: 0.5rem;
-  background-color: var(--accent);
+  background-color: #8c2f39;
   color: #fff;
   border: none;
   padding: 0.8rem;
