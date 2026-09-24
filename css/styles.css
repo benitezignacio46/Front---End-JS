@@ -278,6 +278,45 @@ footer.site-footer {
   margin-top: auto;
 }
 
+/* Botones de cada card: Información (outline) y Comprar (relleno) */
+.libro-botones {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.6rem;
+}
+
+.libro-botones a {
+  flex: 1;
+  text-align: center;
+  padding: 0.5rem 0.4rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: opacity 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.btn-info {
+  border: 1px solid #8c2f39;
+  color: #8c2f39;
+  background-color: transparent;
+}
+
+.btn-info:hover {
+  background-color: #8c2f39;
+  color: #fff;
+}
+
+.btn-comprar {
+  background-color: #8c2f39;
+  color: #fff;
+  border: 1px solid #8c2f39;
+}
+
+.btn-comprar:hover {
+  opacity: 0.85;
+}
+
 /* ===== RESEÑAS (Grid) ===== */
 .resenas-grid {
   display: grid;
@@ -319,6 +358,11 @@ footer.site-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
+}
+
+.contacto-solo {
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .contacto-mapa iframe {
