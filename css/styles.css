@@ -317,6 +317,72 @@ footer.site-footer {
   opacity: 0.85;
 }
 
+/* ===== INFORMACION DEL LIBRO (detalle) ===== */
+.volver-link {
+  display: inline-block;
+  color: #6b5d4f;
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  transition: color 0.2s;
+}
+
+.volver-link:hover {
+  color: #8c2f39;
+}
+
+.libro-detalle-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.libro-detalle-imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.libro-detalle-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.libro-detalle-info h1 {
+  font-size: 2rem;
+}
+
+.libro-detalle-info .autor {
+  color: #6b5d4f;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
+.libro-detalle-info .libro-estado {
+  align-self: flex-start;
+}
+
+.libro-descripcion {
+  color: #6b5d4f;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+.libro-detalle-info .precio {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+}
+
+.btn-comprar-grande {
+  align-self: flex-start;
+  padding: 0.8rem 2rem;
+  font-size: 0.95rem;
+  border-radius: 12px;
+}
+
 /* ===== RESEÑAS (Grid) ===== */
 .resenas-grid {
   display: grid;
@@ -469,6 +535,10 @@ footer.site-footer {
 
   .contacto-mapa iframe {
     min-height: 240px;
+  }
+
+  .libro-detalle-container {
+    grid-template-columns: 1fr;
   }
 }
 
